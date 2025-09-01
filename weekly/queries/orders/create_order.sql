@@ -1,0 +1,2 @@
+INSERT INTO orders (qr_code, users_id, schedules_id, payments_id, fullname, email, phone_number, created_at) 
+VALUES ('qr_code_value', user_id, schedule_id, payment_id, 'fullname_value', 'email_value', 'phone_value', CURRENT_TIMESTAMP);
