@@ -2,7 +2,7 @@ SELECT m.id, m.backdrop_path, m.overview, m.popularity, m.poster_path, m.release
 FROM movies m 
 JOIN movies_genres mg ON m.id = mg.movies_id 
 JOIN genres g ON mg.genres_id = g.id 
-WHERE m.title ILIKE '%search_term%' OR g.name ILIKE '%search_term%' 
+WHERE m.title ILIKE '%search_value%' OR g.name ILIKE '%search_value%' 
 GROUP BY m.id 
 ORDER BY m.created_at DESC 
 LIMIT 10 OFFSET 0;
