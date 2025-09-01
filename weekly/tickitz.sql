@@ -62,7 +62,7 @@ CREATE TABLE "cinemas" (
 
 CREATE TABLE "times" (
   "id" int GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-  "time" timestamp NOT NULL
+  "time" varchar(50) NOT NULL
 );
 
 CREATE TABLE "locations" (
